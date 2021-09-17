@@ -11,20 +11,20 @@ String randomString() {
   return base64UrlEncode(values);
 }
 
-class Messages extends StatefulWidget {
-  const Messages({Key? key}) : super(key: key);
+class Messages1 extends StatefulWidget {
+  const Messages1({Key? key}) : super(key: key);
 
   @override
-  _MessagesState createState() => _MessagesState();
+  _Messages11State createState() => _Messages11State();
 }
 
-class _MessagesState extends State<Messages> {
-  List<types.Message> _messages = [];
+class _Messages11State extends State<Messages1> {
+  List<types.Message> _Messages11 = [];
   final _user = const types.User(id: '06c33e8b-e835-4736-80f4-63f44b66666c');
 
   void _addMessage(types.Message message) {
     setState(() {
-      _messages.insert(0, message);
+      _Messages11.insert(0, message);
     });
   }
 
@@ -44,11 +44,7 @@ class _MessagesState extends State<Messages> {
     return Scaffold(
       body: SafeArea(
         bottom: false,
-        child: Chat(
-          messages: _messages,
-          onSendPressed: _handleSendPressed,
-          user: _user,
-        ),
+        child: Container(),
       ),
     );
   }

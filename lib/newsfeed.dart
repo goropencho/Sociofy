@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sociofy/home.dart';
 import 'package:sociofy/chat_window.dart';
+import 'package:sociofy/messages.dart';
 import 'package:sociofy/settings.dart';
 import 'package:sociofy/theme.dart';
 
